@@ -28,12 +28,16 @@ instacart =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A - Boxplot
+### Chart A - Plot for counts
 
 ```{r}
-instacart %>% 
-  mutate(department = fct_reorder(department, order_hour_of_day)) %>% 
-  plot_ly(y = ~order_hour_of_day, color = ~department, type = "box", colors = "viridis")
+instacart %>%
+  count(aisle, name = "n_obs") %>% 
+  ggplot(aes(x = aisle, y = n_obs))+
+  geom_point() +
+  coord_flip() +
+  ggtitle("") +
+  xlab("aisle name") + ylab("number of items")
 
 ```
 
@@ -49,15 +53,12 @@ instacart %>%
   plot_ly(x = ~department, y = ~n, color = ~department, type = "bar", colors = "viridis")
 ```
 
-### Chart C - Plot for counts
+### Chart C - Boxplot
 
 ```{r}
-instacart %>%
-  count(aisle, name = "n_obs") %>% 
-  ggplot(aes(x = aisle, y = n_obs))+
-  geom_point() +
-  coord_flip() +
-  ggtitle("") +
-  xlab("aisle name") + ylab("number of items")
+instacart %>% 
+  mutate(department = fct_reorder(department, order_hour_of_day)) %>% 
+  plot_ly(y = ~order_hour_of_day, color = ~department, type = "box", colors = "viridis")
+
 ```
 
