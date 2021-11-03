@@ -1,0 +1,63 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(flexdashboard)
+library(htmlwidgets)
+```
+
+
+```{r}
+data("instacart")
+
+instacart = 
+  instacart %>% 
+  slice(1:100) # select only 100 rows
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A - Boxplot
+
+```{r}
+instacart %>% 
+  mutate(department = fct_reorder(department, order_hour_of_day)) %>% 
+  plot_ly(y = ~order_hour_of_day, color = ~department, type = "box", colors = "viridis")
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B - Barplot
+
+```{r}
+instacart %>% 
+  count(department) %>% 
+  mutate(department = fct_reorder(department, n)) %>% 
+  plot_ly(x = ~department, y = ~n, color = ~department, type = "bar", colors = "viridis")
+```
+
+### Chart C - Plot for counts
+
+```{r}
+instacart %>%
+  count(aisle, name = "n_obs") %>% 
+  ggplot(aes(x = aisle, y = n_obs))+
+  geom_point() +
+  coord_flip() +
+  ggtitle("") +
+  xlab("aisle name") + ylab("number of items")
+```
+

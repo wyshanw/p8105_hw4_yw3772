@@ -1,0 +1,31 @@
+---
+title: "P8105 homework 4"
+output: 
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float: true
+---
+
+# Problem 1
+
+In the problem 1 section, you will find a link to page of my resume, and links navigation for my GitHub account, my email, and other professional networks.
+
+### link to my resume
+
+[Resume](about.html)
+
+### Links to professional networks
+
+Github and email icon can be found on the top right corner of the website.
+
+[Linkedin](https://www.linkedin.com/in/yushan-wang-237a821b9/)
+
+# Problem 2
+
+Problem 2 loads the instacart dataset and creates three plots in Dashboard, which can be found on the top right of the website.
+
+
+
+
+

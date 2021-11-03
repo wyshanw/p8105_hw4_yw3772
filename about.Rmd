@@ -1,0 +1,94 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+This page has my academic and professional experience 
+
+# {.tabset}
+
+## Education
+
+**Purdue University -	West Lafayette, IN**
+
+BS in Applied Statistics - Aug. 2017 ~ Dec. 2020
+
+•	GPA: 3.54/4.00 
+
+•	Dean’s List: 12/2017, 05/2018, 12/2019; Semester Honors: 12/2017, 05/2018, 12/2019, 05/2020
+
+•	Coursework: Applied Regression Analysis, Quality Control, Statistical Theory, Probability, Multivariate Calculus, Intro to Time Series, General Chemistry, Fundamentals Biology, Econometrics, etc. 
+
+**Columbia University -	New York, NY**
+
+MS in Biostatistics - Sep. 2021 ~ now
+
+## Work Experience
+
+**Lianren Digital Health** - Shanghai, China
+
+Data Mining Engineer, Department of Medical Technology, Internship - March. ~ June. 2021
+
+•	Composed Statistical Analysis Plan about Covid-19 acute respiratory distress syndrome (ARDS) risk factors study
+
+•	Utilized R to study Covid-19 ARDS risk factors, focusing on missing data imputation, correlation testing, logistic regression and stepwise regression computation, and Nomogram drawing
+
+
+**Institute of Automation, Chinese Academy of Science** - Online
+
+Research Assistant, Center for Big Data Research in Health, Internship - Sep. ~ Oct. 2020
+
+•	Introduced background information on anxiety disorder, explained survey parameters and computed graphs for easier visualization
+
+•	Completed univariate and bivariate association analysis to find associations between symptoms of anxiety
+
+•	Completed multiple linear regression and cluster analysis of the dataset
+
+
+**Purdue University** - West Lafayette, IN
+
+Grader, Statistics Department, Part-time - Jan. ~ May. 2020
+
+•	Provided excellent grading and careful proctoring to every student during exams
+
+•	Cleared up miscommunications by closely working with students to help them learn where they made mistakes
+
+
+## Research Experience
+
+**Research on Gender Difference in Relation to Lung Cancer Patients’ Weight Loss** -	West Lafayette, IN
+
+Main Contributor -	June ~ Oct. 2020
+
+•	Used T-test to explore whether there is a difference between the true mean of weight loss for male and female patients
+
+•	Conducted power test to assess the accuracy of the T-test
+
+•	Wrote and submitted a paper on the research; received acceptance from the 2020 International Symposium on Humanities and Social Sciences, Management and Education Engineering
+
+**Data Analysis Supported Real Estate Purchases in Seattle** -	West Lafayette, IN
+
+Member, Statistics Group Project - Apr. 2019
+
+•	Collected information that concerns potential house buyers in Seattle
+
+•	Analyzed the significance of the factors that concern buyers (e.g., house price, location, size) with a view of statistical inference
+
+•	Utilized R for coding and graphing along with one sample T-test to create confidence interval and hypothesis test 
+
+
+***Computer Game Design based on Python** -	West Lafayette, IN
+
+Member, Computer Programming Group Project - Dec. 2018
+
+•	Designed “Boiler Gold”, an interactive game resembling mine sweeping
+
+•	Revealed the surrounding objects to find a specific color
+
+•	Used Graphic User Interface to program the game design
+
+
+
